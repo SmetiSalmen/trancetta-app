@@ -11,13 +11,13 @@ export const BRAND = {
   phone: "+216 28 336 008",
   secondaryPhone: "+216 25 565 760",
   whatsapp: "+21628336008",
-  email: "",
+  email: "trancetta.nabeul@gmail.com",
   address: "Avenue Mohamed V, Nabeul 8000",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.946761750275!2d10.730303!3d36.457896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302b217e5a0fdbb%3A0xbc26d03ca4d2e8b2!2sAv.%20Habib%20Bourguiba%2C%20Nabeul!5e0!3m2!1sfr!2stn!4v1688000000000",
   social: {
-    facebook: "https://facebook.com/trancetta",
-    instagram: "https://instagram.com/trancetta",
+    facebook: "https://www.facebook.com/p/Trancetta-61555856261380/",
+    instagram: "https://www.instagram.com/trancetta_/",
     tiktok: "",
   },
 };

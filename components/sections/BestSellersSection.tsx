@@ -312,11 +312,11 @@ export default function BestSellersSection() {
                 <div className="flex items-end justify-between mt-5 pt-4 border-t border-cream-dark">
                   <div>
                     <span className="block font-poppins text-[10px] text-text-secondary uppercase tracking-wide mb-1">
-                      À partir de
+                      Tranche à partir de
                     </span>
 
                     <span className="font-anton text-red-primary text-xl">
-                      {pizza.priceQuarter} DT
+                      {pizza.priceSlice} DT
                     </span>
                   </div>
 

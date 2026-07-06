@@ -1,0 +1,263 @@
+[
+  {
+    "id": "TC001",
+    "title": "Browse the home page and enter the menu builder",
+    "description": "This verifies that a visitor can explore the home page sections and reach the menu builder from the landing page.",
+    "category": "Home page discovery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the home page sections"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the lower informational sections"
+      },
+      {
+        "type": "action",
+        "description": "Click the menu navigation link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the menu builder is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Build a pizza tray on desktop",
+    "description": "This verifies that a desktop visitor can choose a tray size, place a pizza into an available zone, and see the order summary reflect the selection.",
+    "category": "Pizza menu builder",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu"
+      },
+      {
+        "type": "action",
+        "description": "Select a tray size"
+      },
+      {
+        "type": "action",
+        "description": "Drag a pizza from the sidebar onto an available tray zone"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected pizza appears on the tray"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the order summary reflects the current configuration"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Use the mobile pizza selector on a small screen",
+    "description": "This verifies that a mobile visitor can choose a tray size and use the mobile selector to build a plate with the summary staying in sync.",
+    "category": "Pizza menu builder",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu"
+      },
+      {
+        "type": "action",
+        "description": "Select a tray size"
+      },
+      {
+        "type": "action",
+        "description": "Use the mobile pizza selector to choose a pizza"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected pizza appears in the builder"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the order summary reflects the selection"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "View the restaurant story and featured offerings",
+    "description": "This verifies that a visitor can review the brand story and featured pizza content on the home page.",
+    "category": "Home page discovery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the brand story section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the featured offerings section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the brand story content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify featured offerings are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Find location and contact information",
+    "description": "This verifies that a visitor can locate the restaurant’s visit and contact details on the home page.",
+    "category": "Home page discovery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the location section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify location information is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact information is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Review the order summary after changing selections",
+    "description": "This verifies that the builder summary updates when a visitor changes their pizza choice during the same session.",
+    "category": "Pizza menu builder",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu"
+      },
+      {
+        "type": "action",
+        "description": "Select a tray size"
+      },
+      {
+        "type": "action",
+        "description": "Drag a pizza from the sidebar onto an available tray zone"
+      },
+      {
+        "type": "action",
+        "description": "Replace the selection with a different pizza"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the order summary shows the latest configuration"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Switch tray size after placing a pizza",
+    "description": "This verifies that changing the tray size updates the available plate layout and keeps the builder state aligned with the current size.",
+    "category": "Pizza menu builder",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu"
+      },
+      {
+        "type": "action",
+        "description": "Select a tray size"
+      },
+      {
+        "type": "action",
+        "description": "Drag a pizza from the sidebar onto an available tray zone"
+      },
+      {
+        "type": "action",
+        "description": "Select a different tray size"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the tray layout updates for the new size"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the order summary updates for the new configuration"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC008",
+    "title": "Open the home page sections in a smooth discovery flow",
+    "description": "This verifies that a visitor can move through the main promotional sections of the landing page without losing access to the page content.",
+    "category": "Home page discovery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the hero section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the concept section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the gallery section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the home page sections are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC009",
+    "title": "Keep the builder usable with an empty tray",
+    "description": "This verifies that a visitor can open the menu and inspect the builder before making any selection, with the empty state remaining usable.",
+    "category": "Pizza menu builder",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /menu"
+      },
+      {
+        "type": "action",
+        "description": "Select a tray size"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the tray builder is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an empty tray state is displayed"
+      }
+    ],
+    "priority": "Low"
+  }
+]

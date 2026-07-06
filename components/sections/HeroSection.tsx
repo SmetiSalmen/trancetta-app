@@ -224,7 +224,7 @@ export default function HeroSection() {
               {/* Cursive Slogan/Sub-heading with underline */}
               <div ref={subtitleRef} className="opacity-0 mb-6 relative">
                 <p className="font-caveat text-red-primary text-4xl md:text-5xl rotate-[-3deg] inline-block mb-1">
-                  É l'ora della pizza!
+                  É l&apos;ora della pizza!
                 </p>
                 {/* Yellow/Orange hand-drawn underline SVG */}
                 <div className="w-56 h-3 text-orange-pizza -mt-1 opacity-80">

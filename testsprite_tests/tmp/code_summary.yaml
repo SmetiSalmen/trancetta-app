@@ -1,0 +1,63 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Next.js
+  - React
+  - Tailwind CSS
+  - dnd-kit
+  - GSAP
+routes:
+  - path: /
+    file: app/page.tsx
+    auth_required: false
+    description: Home page with hero, story, best sellers, gallery, location, and contact sections
+  - path: /menu
+    file: app/menu/page.tsx
+    auth_required: false
+    description: Interactive pizza menu builder with drag-and-drop plate composition
+features:
+  - name: Home page discovery
+    description: Browse the landing page sections and navigate into the menu experience.
+    files:
+      - app/page.tsx
+      - components/sections/HeroSection.tsx
+      - components/sections/ConceptSection.tsx
+      - components/sections/StorySection.tsx
+      - components/sections/BestSellersSection.tsx
+      - components/sections/WhyTrancettaSection.tsx
+      - components/sections/GallerySection.tsx
+      - components/sections/LocationSection.tsx
+      - components/sections/ContactSection.tsx
+    entry_route: /
+    user_interactions:
+      - Open the home page
+      - Scroll through the promotional sections
+      - Click the menu navigation link to open the menu page
+      - View contact and location content
+    api_calls: []
+    auth_required: false
+  - name: Pizza menu builder
+    description: Configure a pizza plate by choosing a size and placing pizzas into the available zones.
+    files:
+      - app/menu/page.tsx
+      - components/menu/PlateSizeSelector.tsx
+      - components/menu/PizzaSidebar.tsx
+      - components/menu/PlateBuilder.tsx
+      - components/menu/OrderSummary.tsx
+      - components/menu/MobilePizzaSelector.tsx
+      - components/menu/PlateDropZone.tsx
+      - lib/pizzaData.ts
+    entry_route: /menu
+    user_interactions:
+      - Open the menu page
+      - Select a plate size
+      - Drag a pizza from the sidebar onto a plate zone
+      - Use the mobile selector to choose a pizza on smaller screens
+      - Review the order summary after making selections
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: The menu builder is client-side only and there is no backend checkout or order persistence.
+    location: app/menu/page.tsx
+    impact: Users can compose a plate in the UI, but the selection is not sent to a server.

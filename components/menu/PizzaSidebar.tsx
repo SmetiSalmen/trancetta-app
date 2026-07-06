@@ -546,21 +546,15 @@ export default function PizzaSidebar({
       <div
         className="
           mt-3
-
           flex
           min-h-0
           flex-1
           flex-col
-
           gap-3
-
           overflow-y-auto
           overflow-x-hidden
-
           pr-1.5
-
           overscroll-contain
-
           scrollbar-thin
         "
       >
@@ -663,8 +657,7 @@ export function DragPizzaOverlay({
         className="
           relative
 
-          aspect-[3/2]
-
+          h-[105px]
           overflow-hidden
 
           bg-cream-dark

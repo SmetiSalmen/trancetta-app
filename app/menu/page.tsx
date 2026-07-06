@@ -3,7 +3,7 @@
 import {
   useState,
   useCallback,
-  useEffect,
+  useSyncExternalStore,
 } from "react";
 
 import Image from "next/image";
@@ -160,20 +160,14 @@ export default function MenuPage() {
   );
 
 
-  const [
-    mounted,
-    setMounted,
-  ] = useState(false);
-
-
-  /* ==========================================================
-     MOUNTED
-     Important pour éviter le hydration mismatch de dnd-kit
-  ========================================================== */
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useSyncExternalStore(
+    useCallback(
+      () => () => { },
+      []
+    ),
+    () => true,
+    () => false
+  );
 
 
   /* ==========================================================
@@ -965,11 +959,12 @@ export default function MenuPage() {
                     hidden
 
                     items-start
-
-                    gap-6
+                    gap-5
 
                     lg:grid
-                    lg:grid-cols-[1fr_320px_1fr]
+                    lg:grid-cols-[240px_minmax(400px,1fr)_240px]
+
+                    xl:grid-cols-[270px_minmax(500px,1fr)_270px]
                   "
                 >
 
@@ -1146,10 +1141,12 @@ export default function MenuPage() {
                   hidden
 
                   items-start
-                  gap-6
+                  gap-5
 
                   lg:grid
-                  lg:grid-cols-[1fr_320px_1fr]
+                  lg:grid-cols-[240px_minmax(400px,1fr)_240px]
+
+                  xl:grid-cols-[270px_minmax(500px,1fr)_270px]
                 "
               >
 
@@ -1252,45 +1249,6 @@ export default function MenuPage() {
                 "
               >
 
-                {/* MOBILE PLATE */}
-
-                <div
-                  className="
-                    rounded-2xl
-
-                    border
-                    border-cream-dark
-
-                    bg-white
-
-                    p-4
-                  "
-
-                  style={{
-                    height:
-                      "320px",
-                  }}
-                >
-
-                  <PlateBuilder
-                    plateSize={
-                      plateSize
-                    }
-
-                    selections={
-                      selections
-                    }
-
-                    onRemove={
-                      handleRemove
-                    }
-
-                    activeDropZone={
-                      null
-                    }
-                  />
-
-                </div>
 
 
                 {/* MOBILE SELECTOR */}
